@@ -1,0 +1,11 @@
+applications:
+- name: fleet-demo-fleet-location-service
+  buildpack: java_buildpack
+  path: target/fleet-location-service-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+  - fleet-demo-configserver
+  - fleet-demo-eureka
+  - fleet-demo-mysql
+  env:
+    PREFIX: fleet-demo-
+# cf create-service cleardb spark fleet-demo-mysql

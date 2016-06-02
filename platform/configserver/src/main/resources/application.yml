@@ -20,7 +20,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/scratches/vehicle-config-repo
+          uri: https://github.com/making/vehicle-config-repo
           basedir: target/config
 
 ---

@@ -1,0 +1,6 @@
+applications:
+- name: fleet-demo-config-server
+  buildpack: java_buildpack
+  path: target/fleet-config-server-1.0.0.BUILD-SNAPSHOT.jar
+  env:
+    PREFIX: fleet-demo-

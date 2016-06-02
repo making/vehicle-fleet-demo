@@ -1,0 +1,9 @@
+applications:
+- name: fleet-demo-dashboard
+  buildpack: java_buildpack
+  path: target/dashboard-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+  - fleet-demo-configserver
+  - fleet-demo-eureka
+  env:
+    PREFIX: fleet-demo-
