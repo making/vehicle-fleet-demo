@@ -5,7 +5,8 @@ spring:
     name: fleet-location-simulator
 gpsSimmulator:
   googleApiKey: AIzaSyDvdz2cb4zfp8NQVFu4kdzXFoIcHG744I4
-
+eureka.instance.hostname: localhost
+eureka.instance.leaseRenewalIntervalInSeconds: 5
 ---
 spring:
   profiles: test

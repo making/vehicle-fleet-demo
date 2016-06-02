@@ -7,3 +7,5 @@ spring:
     stream:
       bindings:
         output: vehicles
+eureka.instance.hostname: localhost
+eureka.instance.leaseRenewalIntervalInSeconds: 5

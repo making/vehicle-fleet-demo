@@ -6,7 +6,8 @@ ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 60000
 stomp.url: localhost:9007/stomp
-
+eureka.instance.hostname: localhost
+eureka.instance.leaseRenewalIntervalInSeconds: 5
 ---
 spring:
   profiles: test

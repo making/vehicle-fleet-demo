@@ -4,4 +4,5 @@ server:
 spring:
   application:
     name: service-location-service
-  
+eureka.instance.hostname: localhost
+eureka.instance.leaseRenewalIntervalInSeconds: 5
