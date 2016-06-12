@@ -2,6 +2,7 @@ applications:
 - name: fleet-demo-service-location-service
   buildpack: java_buildpack
   path: target/service-location-service-1.0.0.BUILD-SNAPSHOT.jar
+  memory: 1G
   services:
   - fleet-demo-configserver
   - fleet-demo-eureka
@@ -9,3 +10,4 @@ applications:
   env:
     PREFIX: fleet-demo-
 # cf create-service mlab sandbox fleet-demo-mongodb
+# cf create-service p-mongodb standard fleet-demo-mongodb

@@ -2,6 +2,7 @@ applications:
 - name: fleet-demo-fleet-location-ingest
   buildpack: java_buildpack
   path: target/fleet-location-ingest-1.0.0.BUILD-SNAPSHOT.jar
+  memory: 1G
   services:
   - fleet-demo-configserver
   - fleet-demo-eureka
@@ -9,3 +10,4 @@ applications:
   env:
     PREFIX: fleet-demo-
 # cf create-service cloudamqp lemur fleet-demo-rabbitmq
+# cf create-service p-rabbitmq standard fleet-demo-rabbitmq
