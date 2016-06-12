@@ -1,34 +1,34 @@
 [
 	{
-		"from": "1150 Varnum St NE, Washington, DC 20017",
-		"to":   "1600 Pennsylvania Ave NW, Washington, DC 20500"
+		"from": "六本木ヒルズ",
+		"to":   "北千住"
 	},
 	{
-		"from": "801 Mt Vernon Pl NW, Washington, DC 20001",
-		"to":   "3800 Reservoir Rd NW, Washington, DC 20007"
+		"from": "六本木ヒルズ",
+		"to":   "豊洲"
 	},
 	{
-		"from": "8th & I Streets SE, Washington, DC 20003",
-		"to": "3450 Massachusetts Ave NW, Washington, DC 20392"
+		"from": "東京大学",
+		"to": "東京タワー"
 	},
 	{
-		"from": "1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
-		"to": "699 First St NE, Washington, DC 20002, USA"
+		"from": "表参道",
+		"to": "東京スカイツリー"
 	},
 	{
-		"from": "4155 Linnean Avenue Northwest, Washington, DC 20008, USA",
-		"to": "901 Massachusetts Ave NW, Washington, DC 20001, USA"
+		"from": "新宿",
+		"to":   "上野公園"
 	},
 	{
-		"from": "3675 Ely Pl SE, Washington, DC 20019, USA",
-		"to": "901 Massachusetts Ave NW, Washington, DC 20001, USA"
+		"from": "渋谷",
+		"to":   "東京ディズニーランド"
 	},
 	{
-		"from": "George Washington Memorial Pkwy, Washington, DC 20037",
-		"to": "901 Massachusetts Ave NW, Washington, DC 20001, USA"
+		"from": "東京ディズニーランド",
+		"to": "東京タワー"
 	},
 	{
-		"from": "200 Mac Dill Blvd SE, Washington, DC 20340",
-		"to": "901 Massachusetts Ave NW, Washington, DC 20001, USA"
+		"from": "東京スカイツリー",
+		"to": "羽田空港"
 	}
 ]

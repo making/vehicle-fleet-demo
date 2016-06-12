@@ -96,13 +96,15 @@ L.flashingMarker = function(latlngs, options) {
 
 // create map
 var map = L.map('map', {
-	center : [ 38.9047, -77.0164 ],
+	//center : [ 38.9047, -77.0164 ],
+	center : [ 35.660464,139.729249 ],
 	zoom : 13,
 //	markerZoomAnimation: false
 });
 
 var miniMap = L.map('miniMap', {
-	center : [ 38.9047, -77.0164 ],
+	//center : [ 38.9047, -77.0164 ],
+	center : [ 35.660464,139.729249 ],
 	zoom : 15
 });
 
@@ -231,6 +233,7 @@ function setupWebSocketConnection() {
 	    	        console.log('Connected to vehicle updates: ' + stompUrl);
 	    	        stompClient.subscribe("/topic/vehicles", function(m) {
 	    	        	var updateMsg = JSON.parse(m.body);
+						//console.log(updateMsg);
 	    				handleUpdateMessage(updateMsg);
 	    			});
 	    	    };

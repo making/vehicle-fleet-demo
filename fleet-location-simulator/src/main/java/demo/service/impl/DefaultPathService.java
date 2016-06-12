@@ -20,6 +20,7 @@ import java.util.List;
 
 import javax.xml.transform.stream.StreamSource;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.oxm.Unmarshaller;
@@ -134,8 +135,8 @@ public class DefaultPathService implements PathService {
 		List<Place> stations = null;
 		try {
 			//Spring One Conference Center location
-			stations = Places.nearbySearch(new Params().location(38.903638,-77.0247618).radius(5000)
-			        .keyword("gasoline").openNow().maxResults(6000)).getResult();
+			stations = Places.nearbySearch(new Params().location(35.660464,139.729249).radius(5000)
+			        .keyword("ガソリン").openNow().maxResults(6000)).getResult();
 		} catch (IOException e) {
 			throw new IllegalStateException(e);
 		}

@@ -15,17 +15,15 @@
  */
 package demo.rest;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
 import java.util.concurrent.Future;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -66,6 +64,9 @@ public class RestApi {
 
 	@Autowired
 	private AsyncTaskExecutor taskExecutor;
+
+	@Autowired
+	ObjectMapper objectMapper;
 
 	private Map<Long, GpsSimulatorInstance> taskFutures = new HashMap<>();
 
@@ -128,12 +129,22 @@ public class RestApi {
 		return pathService.getServiceStations();
 	}
 
+	public JsonNode fleet() {
+		final InputStream is = this.getClass().getResourceAsStream("/fleet.json");
+		try {
+			return objectMapper.readValue(is, JsonNode.class);
+		} catch (IOException e) {
+			throw new IllegalStateException(e);
+		}
+	}
+
 	@RequestMapping("/fixture")
 	public SimulatorFixture fixture() {
 
 		final List<DirectionInput> directions = this.pathService.loadDirectionInput();
 		final SimulatorFixture fixture = new SimulatorFixture();
-
+		final JsonNode fleet = fleet();
+		int i = 0;
 		for (DirectionInput directionInput : directions) {
 
 			final GpsSimulatorRequest gpsSimulatorRequest = new GpsSimulatorRequest();
@@ -142,11 +153,12 @@ public class RestApi {
 			gpsSimulatorRequest.setMove(true);
 
 			String polyline = this.pathService.getCoordinatesFromGoogleAsPolyline(directionInput);
+			gpsSimulatorRequest.setVin(fleet.get(i++).get("vin").asText());
 			gpsSimulatorRequest.setPolyline(polyline);
 			gpsSimulatorRequest.setReportInterval(1000);
-			gpsSimulatorRequest.setSpeedInKph(50d);
+			gpsSimulatorRequest.setSpeedInKph(50d + new Random().nextDouble() * 100);
 			gpsSimulatorRequest.setExportPositionsToMessaging(true);
-			gpsSimulatorRequest.setSecondsToError(60);
+			gpsSimulatorRequest.setSecondsToError( new Random().nextInt(60));
 			gpsSimulatorRequest.setVehicleStatus(VehicleStatus.NONE);
 			gpsSimulatorRequest.setFaultCode(FaultCodeUtils.getRandomFaultCode());
 			fixture.getGpsSimulatorRequests().add(gpsSimulatorRequest);
