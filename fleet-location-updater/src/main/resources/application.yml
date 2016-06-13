@@ -1,12 +1,10 @@
 server:
   port: 9007
 spring:
-  application:
-    name: fleet-location-updater
   cloud:
     stream:
       bindings:
-        input: vehicles
+        input.destination: vehicles
 eureka.instance.hostname: localhost
 eureka.instance.leaseRenewalIntervalInSeconds: 5
 ---

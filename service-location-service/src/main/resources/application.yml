@@ -1,8 +1,4 @@
 server:
   port: 9001
-
-spring:
-  application:
-    name: service-location-service
 eureka.instance.hostname: localhost
 eureka.instance.leaseRenewalIntervalInSeconds: 5

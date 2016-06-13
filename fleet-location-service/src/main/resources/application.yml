@@ -1,7 +1,9 @@
 server:
   port: 9000
-spring:
-  application:
-    name: fleet-location-service
 eureka.instance.hostname: localhost
 eureka.instance.leaseRenewalIntervalInSeconds: 5
+
+spring.jpa.properties.hibernate.format_sql: true
+spring.jpa.hibernate.ddl-auto: create-drop
+logging.level.org.hibernate.SQL: DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE

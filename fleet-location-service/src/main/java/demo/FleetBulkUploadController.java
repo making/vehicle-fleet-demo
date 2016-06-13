@@ -44,11 +44,20 @@ public class FleetBulkUploadController {
 	@RequestMapping(value="/fleet", method=RequestMethod.POST)
 	@ResponseStatus(HttpStatus.CREATED)
 	public void upload(@RequestBody List<Location> trucks) throws Exception {
+//		for (Location t : trucks) {
+//			System.out.println("save " + t);
+//			this.repository.save(t);
+//		}
 		this.repository.save(trucks);
 	}
 
 	@RequestMapping(value="/purge", method=RequestMethod.POST)
 	public void purge() {
+//		Iterable<Location> locations = this.repository.findAll();
+//		for (Location l : locations) {
+//			System.out.println("delete " + l);
+//			this.repository.delete(l);
+//		}
 		this.repository.deleteAll();
 	}
 

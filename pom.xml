@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.0.RELEASE</version>
+		<version>1.3.5.RELEASE</version>
 	</parent>
 
 	<groupId>org.demo</groupId>
@@ -15,7 +15,7 @@
 	<name>Spring Cloud Sample Vehicle Fleet</name>
 
 	<modules>
-		<module>config-bootstrap</module>
+		<!--<module>config-bootstrap</module>-->
 		<module>stubs</module>
 		<module>fleet-location-service</module>
 		<module>fleet-location-simulator</module>
@@ -35,9 +35,14 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-parent</artifactId>
-				<version>Brixton.M2</version>
+				<version>Brixton.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.16.8</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

@@ -9,6 +9,5 @@ applications:
   - fleet-demo-mysql
   env:
     PREFIX: fleet-demo-
-    spring.jpa.hibernate.ddl-auto: create-drop
 # cf create-service cleardb spark fleet-demo-mysql
 # cf create-service p-mysql 512mb fleet-demo-mysql
