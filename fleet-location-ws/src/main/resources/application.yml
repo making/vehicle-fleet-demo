@@ -1,10 +1,5 @@
 server:
   port: 9007
-spring:
-  cloud:
-    stream:
-      bindings:
-        input.destination: vehicles
 eureka.instance.hostname: localhost
 eureka.instance.leaseRenewalIntervalInSeconds: 5
 ---

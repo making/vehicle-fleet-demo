@@ -15,6 +15,10 @@
  */
 package demo;
 
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -27,20 +31,34 @@ import org.springframework.web.client.RestTemplate;
  * Main entry point for the Fleet Location Updater application.
  *
  * @author Gunnar Hillert
- *
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class FleetLocationUpdaterApplication {
+public class FleetLocationWsApplication {
 
-	public static void main(String[] args) throws Exception {
-		SpringApplication.run(FleetLocationUpdaterApplication.class, args);
-	}
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(FleetLocationWsApplication.class, args);
+    }
 
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
+    @Bean
+    Queue fleetQueue() {
+        return new Queue("ingest.fleet-location.outcome");
+    }
+
+    @Bean
+    TopicExchange fleetExchange() {
+        return new TopicExchange("fleet");
+    }
+
+    @Bean
+    Binding binding() {
+        return BindingBuilder.bind(fleetQueue()).to(fleetExchange()).with("fleet");
+    }
+
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

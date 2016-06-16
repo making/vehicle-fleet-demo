@@ -1,7 +1,7 @@
 applications:
-- name: fleet-demo-fleet-location-updater
+- name: fleet-demo-fleet-location-ws
   buildpack: java_buildpack
-  path: target/fleet-location-updater-1.0.0.BUILD-SNAPSHOT.jar
+  path: target/fleet-location-ws-1.0.0.BUILD-SNAPSHOT.jar
   memory: 1G
   services:
   - fleet-demo-configserver
