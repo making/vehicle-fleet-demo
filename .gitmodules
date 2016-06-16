@@ -1,0 +1,3 @@
+[submodule "dataflow-modules/fleet-location-updater"]
+	path = dataflow-modules/fleet-location-updater
+	url = https://github.com/making/fleet-location-updater
