@@ -9,7 +9,9 @@ applications:
   - fleet-demo-eureka
   - fleet-demo-redis
   - fleet-demo-rabbitmq
+  - fleet-demo-stream-db
   # cf create-service p-rabbitmq standard fleet-demo-rabbitmq
   # cf create-service p-redis shared-vm fleet-demo-redis
+  # cf create-service p-mysql 512mb fleet-demo-stream-db
   env:
     PREFIX: fleet-demo-
