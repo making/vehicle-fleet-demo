@@ -1,9 +1,0 @@
-server:
-  port: 9006
-spring:
-  cloud:
-    stream:
-      bindings:
-        output.destination: vehicles
-eureka.instance.hostname: localhost
-eureka.instance.leaseRenewalIntervalInSeconds: 5

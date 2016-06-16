@@ -1,7 +1,0 @@
-applications:
-- name: fleet-location-service
-  services:
-    - mysql
-#    - zipkin
-    - configserver
-    - eureka

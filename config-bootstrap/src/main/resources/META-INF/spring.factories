@@ -1,7 +1,0 @@
-# Bootstrap components
-org.springframework.boot.env.EnvironmentPostProcessor=\
-bootstrap.EnvironmentBootstrapConfiguration
-# Auto Configuration
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-autoconfig.DefaultSamplerAutoConfiguration,\
-autoconfig.CloudProfileAutoConfiguration

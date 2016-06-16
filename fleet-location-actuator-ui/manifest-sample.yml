@@ -1,6 +1,0 @@
-applications:
-- name: fleet-location-actuator-ui
-  services:
-#    - zipkin
-    - configserver
-    - eureka
