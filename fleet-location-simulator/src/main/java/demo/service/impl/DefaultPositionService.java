@@ -39,8 +39,11 @@ public class DefaultPositionService implements PositionService {
 	private KmlService kmlService;
 
 	@Autowired
-	@LoadBalanced
+	//@LoadBalanced
 	private RestTemplate restTemplate;
+
+	@Autowired
+	DomainName domainName;
 
 	public DefaultPositionService() {
 		super();
@@ -56,7 +59,7 @@ public class DefaultPositionService implements PositionService {
 		}
 
 		if (sendPositionsToIngestionService) {
-			this.restTemplate.postForLocation("http://fleet-location-ingest/api/locations", currentPosition);
+			this.restTemplate.postForLocation("http://dataflow-server-ingest-http" + domainName.value(), currentPosition);
 		}
 
 	}

@@ -55,7 +55,7 @@ public class GpsSimulatorApplication {
 	}
 
 	@Bean
-	@LoadBalanced
+	//@LoadBalanced
 	RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
