@@ -1,0 +1,39 @@
+applications:
+  - name: fake-p-mongodb
+    command: fake-p-mongodb
+    memory: 32m
+    buildpack: go_buildpack
+    env:
+      DASHBOARD_URL: "https://cloudfoundry.appdirect.com/api/custom/cloudfoundry/v2/sso/start?serviceUuid=bafcba41-b7be-4836-8952-95b4b7c34003"
+      CREDENTIALS: |
+          {
+            "uri": "mongodb://CloudFoundry_31v2q4rf_nmk5eukn_je00e4lc:M-vAkoRa3kNQBl98WSCjNXGpeew8U1WY@ds011268.mlab.com:11268/CloudFoundry_31v2q4rf_nmk5eukn"
+          }
+      SERVICE: |
+          {
+            "id": "F1056353-B93B-431C-A628-A850362B92AC",
+            "name": "p-mongodb",
+            "description": "Fake MongoDB Service Broker",
+            "bindable": true,
+            "tags": [
+              "document",
+              "mongodb"
+            ],
+            "plan_updateable": true,
+            "plans": [
+              {
+                "id": "1155A75B-0F56-4F14-9218-7FBB32612971",
+                "name": "standard",
+                "description": "The default plan",
+                "metadata": {
+                  "displayName": "Standard"
+                }
+              }
+            ],
+            "metadata": {
+              "displayName": "Fake MongoDB",
+              "longDescription": "This is a fake MongoDB service broker",
+              "documentationUrl": "http://doc.fake.example.com",
+              "supportUrl": "http://support.fake.example.com"
+            }
+          }
