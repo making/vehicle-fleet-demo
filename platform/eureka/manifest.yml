@@ -2,7 +2,7 @@ applications:
 - name: fleet-demo-eureka-server
   buildpack: java_buildpack
   path: target/fleet-eureka-server-1.0.0.BUILD-SNAPSHOT.jar
-  memory: 1G
+  memory: 512m
   services:
   - fleet-demo-configserver
   - fleet-demo-eureka

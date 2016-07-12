@@ -10,3 +10,4 @@ applications:
   env:
     PREFIX: fleet-demo-
 # cf create-service cloudamqp lemur fleet-demo-rabbitmq
+# cf create-service p-rabbitmq standard fleet-demo-rabbitmq

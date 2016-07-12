@@ -6,7 +6,7 @@ applications:
   services:
   - fleet-demo-configserver
   - fleet-demo-eureka
-  - fleet-demo-rabbitmq
+  #- fleet-demo-rabbitmq
   env:
     PREFIX: fleet-demo-
 # cf create-service cloudamqp lemur fleet-demo-rabbitmq

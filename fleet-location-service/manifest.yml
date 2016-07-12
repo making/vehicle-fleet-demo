@@ -2,7 +2,7 @@ applications:
 - name: fleet-demo-fleet-location-service
   buildpack: java_buildpack
   path: target/fleet-location-service-1.0.0.BUILD-SNAPSHOT.jar
-  memory: 1G
+  memory: 512m
   services:
   - fleet-demo-configserver
   - fleet-demo-eureka

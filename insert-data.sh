@@ -11,8 +11,11 @@ fi
 #url_s=localhost:9001
 #url_f=localhost:9000
 
-url_s=http://fleet-demo-service-location-service.52.68.100.51.xip.io
-url_f=http://fleet-demo-fleet-location-service.52.68.100.51.xip.io
+#url_s=http://fleet-demo-service-location-service.52.68.100.51.xip.io
+#url_f=http://fleet-demo-fleet-location-service.52.68.100.51.xip.io
+
+url_s=http://fleet-demo-service-location-service.local.pcfdev.io
+url_f=http://fleet-demo-fleet-location-service.local.pcfdev.io
 
 echo ""
 echo "====="
