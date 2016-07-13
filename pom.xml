@@ -19,6 +19,7 @@
 		<!--<module>stubs</module>-->
 		<module>fleet-location-service</module>
 		<module>fleet-location-simulator</module>
+		<module>fleet-location-ws</module>
 		<module>service-location-service</module>
 		<module>dashboard</module>
 		<module>platform</module>

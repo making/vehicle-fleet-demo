@@ -16,6 +16,7 @@
 		<module>eureka</module>
 		<module>configserver</module>
 		<module>hystrix-dashboard</module>
+		<module>dataflow-server</module>
 	</modules>
 
 </project>
