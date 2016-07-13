@@ -1,0 +1,181 @@
+[
+  {
+    "address1": " 国道17号線",
+    "city": "Chiyoda-ku",
+    "latitude": 35.69657,
+    "longitude": 139.770433,
+    "state": "Tōkyō-to",
+    "zip": "101-0041",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinjuku-ku",
+    "latitude": 35.6978407,
+    "longitude": 139.740207,
+    "state": "Tōkyō-to",
+    "zip": "162-0826",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinagawa-ku",
+    "latitude": 35.6168862,
+    "longitude": 139.7462594,
+    "state": "Tōkyō-to",
+    "zip": "140-0002",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Chūō-ku",
+    "latitude": 35.68225549999999,
+    "longitude": 139.7812861,
+    "state": "Tōkyō-to",
+    "zip": "103-0016",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Meguro-ku",
+    "latitude": 35.6504183,
+    "longitude": 139.6847248,
+    "state": "Tōkyō-to",
+    "zip": "153-0043",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinagawa-ku",
+    "latitude": 35.62540080000001,
+    "longitude": 139.7306266,
+    "state": "Tōkyō-to",
+    "zip": "141-0022",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Bunkyō-ku",
+    "latitude": 35.7038221,
+    "longitude": 139.7619945,
+    "state": "Tōkyō-to",
+    "zip": "113-0033",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Minato-ku",
+    "latitude": 35.64231240000001,
+    "longitude": 139.7474556,
+    "state": "Tōkyō-to",
+    "zip": "105-0023",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shibuya-ku",
+    "latitude": 35.6847194,
+    "longitude": 139.7040082,
+    "state": "Tōkyō-to",
+    "zip": "151-0051",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinagawa-ku",
+    "latitude": 35.617405,
+    "longitude": 139.713404,
+    "state": "Tōkyō-to",
+    "zip": "142-0051",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Chiyoda-ku",
+    "latitude": 35.6949774,
+    "longitude": 139.7824559,
+    "state": "Tōkyō-to",
+    "zip": "101-0031",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Minato-ku",
+    "latitude": 35.6725349,
+    "longitude": 139.7223124,
+    "state": "Tōkyō-to",
+    "zip": "107-0061",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinjuku-ku",
+    "latitude": 35.6954161,
+    "longitude": 139.6958197,
+    "state": "Tōkyō-to",
+    "zip": "160-0023",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shibuya-ku",
+    "latitude": 35.6870713,
+    "longitude": 139.696021,
+    "state": "Tōkyō-to",
+    "zip": "151-0053",
+    "type": "Service"
+  },
+  {
+    "address1": " Unnamed Road",
+    "city": "Shibuya-ku",
+    "latitude": 35.662097,
+    "longitude": 139.701772,
+    "state": "Tōkyō-to",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Shinjuku-ku",
+    "latitude": 35.69594490000001,
+    "longitude": 139.6873094,
+    "state": "Tōkyō-to",
+    "zip": "160-0023",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Chūō-ku",
+    "latitude": 35.6780932,
+    "longitude": 139.7685026,
+    "state": "Tōkyō-to",
+    "zip": "103-0028",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Meguro-ku",
+    "latitude": 35.62697800000001,
+    "longitude": 139.691425,
+    "state": "Tōkyō-to",
+    "zip": "152-0004",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Minato-ku",
+    "latitude": 35.6599145,
+    "longitude": 139.7502372,
+    "state": "Tōkyō-to",
+    "zip": "105-0011",
+    "type": "Service"
+  },
+  {
+    "address1": " ",
+    "city": "Minato-ku",
+    "latitude": 35.6637992,
+    "longitude": 139.7505017,
+    "state": "Tōkyō-to",
+    "zip": "105-0003",
+    "type": "Service"
+  }
+]

@@ -20,7 +20,5 @@ build
 new_fleet.json
 rebel.xml
 /logs
-**/fleet.json
-**/servicelocations.json
 *.ipr
 *.iws
