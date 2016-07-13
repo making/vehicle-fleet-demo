@@ -15,3 +15,5 @@ applications:
   # cf create-service p-mysql 512mb fleet-demo-stream-db
   env:
     PREFIX: fleet-demo-
+    CF_USERNAME: tmaki@pivotal.io
+    CF_PASSWORD: Just6ock
