@@ -14,11 +14,11 @@ fi
 #url_s=http://fleet-demo-service-location-service.52.68.100.51.xip.io
 #url_f=http://fleet-demo-fleet-location-service.52.68.100.51.xip.io
 
-#url_s=http://fleet-demo-service-location-service.local.pcfdev.io
-#url_f=http://fleet-demo-fleet-location-service.local.pcfdev.io
+url_s=http://fleet-demo-service-location-service.local.pcfdev.io
+url_f=http://fleet-demo-fleet-location-service.local.pcfdev.io
 
-url_s=http://fleet-demo-service-location-service.cfapps.io
-url_f=http://fleet-demo-fleet-location-service.cfapps.io
+#url_s=http://fleet-demo-service-location-service.cfapps.io
+#url_f=http://fleet-demo-fleet-location-service.cfapps.io
 
 echo ""
 echo "====="

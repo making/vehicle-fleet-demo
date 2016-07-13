@@ -16,4 +16,4 @@ applications:
   env:
     PREFIX: fleet-demo-
     CF_USERNAME: tmaki@pivotal.io
-    CF_PASSWORD: Just6ock
+    CF_PASSWORD: xxxx
