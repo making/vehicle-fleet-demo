@@ -2,7 +2,7 @@ applications:
 - name: fleet-demo-dataflow-server
   memory: 1G
   disk_quota: 2G
-  buildpack: java_buildpack
+  buildpack: java_buildpack_offline
   path: target/dataflow-server-0.0.1-SNAPSHOT.jar
   services:
   - fleet-demo-configserver

@@ -1,6 +1,6 @@
 applications:
 - name: fleet-demo-service-location-service
-  buildpack: java_buildpack
+  buildpack: java_buildpack_offline
   path: target/service-location-service-1.0.0.BUILD-SNAPSHOT.jar
   memory: 512m
   services:

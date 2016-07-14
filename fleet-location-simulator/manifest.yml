@@ -1,6 +1,6 @@
 applications:
 - name: fleet-demo-fleet-location-simulator
-  buildpack: java_buildpack
+  buildpack: java_buildpack_offline
   path: target/fleet-location-simulator-1.0.0.BUILD-SNAPSHOT.jar
   memory: 1G
   services:
